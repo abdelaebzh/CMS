@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script type="text/javascript" src="C:\Users\Fantaye\Documents\Documents\School Bull-kaka\Year 3\Internet Programming\Assignments\jQuery Exercises & Solutions\jquery.js"></script>
+
+	<style type="text/css">
+	
+		a
+		{
+
+			background-color: lightblue;
+			text-decoration: none;
+			padding:0px 100px 0px 5px;
+		}
+		.collapsee
+		{
+			display: none;
+		}
+
+	</style>
+	<script type="text/javascript">
+
+	 $(document).ready(function(){
+	 	$('#tutorial').click(function(){
+	 		$("#HTML").css("display","block");
+	 		$("#css").css("display","block");
+	 	});
+	 	$('#HTML').click(function(){
+	 		$("#w3").css("display","block");
+	 		$("#point").css("display","block");
+	 	});
+	 	$('#resources').click(function(){
+	 		$("#handouts").css("display","block");
+	 		$("#books").css("display","block");
+	 		$("#slides").css("display","block");
+	 	});
+	 });		
+	</script>
+</head>
+<body>
+	<ul type="none">
+		<li><a href="#">Home</a><br></li>
+		<li><a href="#" class="collapsible" id="tutorial">Tutorials</a></li>
+			<ul type="none">
+				<li><a href="#"  class="collapsee" id="HTML">HTML</a></li>
+				<ul type="none">
+					<li><a href="http://www.w3schools.com" class="collapsee" id="w3">w3schools.com</a></li>
+					<li><a href="http://www.tutorialspoint.com" class="collapsee" id="point">tutorialspoint.com</a></li>
+				</ul>
+				<li><a href="#" class="collapsee" id="css">CSS</a></li>
+			</ul >
+		<li><a href="#" class="collapsible" id="resources">Resources</a></li>
+			<ul type="none">
+				<li><a href="#" class="collapsee" id="handouts">Handouts</a></li>
+				<li><a href="#" class="collapsee" id="books">Books</a></li>
+				<li><a href="#" class="collapsee" id="slides">Slides</a></li>
+			</ul>
+	</ul>
+</body>
+</html>
